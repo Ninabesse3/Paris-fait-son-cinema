@@ -7,7 +7,7 @@ const cartes = [
     {
         id: "1",
         titre: "Sous la Seine",
-        image: "images/Sous_la_Seine.jpg",
+        image: "https://www.cinehorizons.net/sites/default/files/affiches/1892690602-sous-la-seine.jpg",
         texte: "Été 2024, Paris accueille pour la première fois les championnats du monde de triathlon sur la Seine. Sophia, brillante scientifique, est alertée par Mika, une jeune activiste dévouée à l'écologie, de la présence d'un grand requin dans les profondeurs du fleuve. Elles n'ont d'autre choix que de faire équipe avec Adil, commandant de la police fluviale pour éviter un bain de sang au cœur de la ville.",
         pins: [
             {coords: [48.82623, 2.36085], label: "lieu"},
