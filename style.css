@@ -1,7 +1,12 @@
 /* changement de la couleur du fond sur toutes les pages*/
 body {
-    background-color: black;
-    margin: 0;
+  background-color: #0d0d0d;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #f5f5f5;
+  background-image: radial-gradient(circle at 50% 20%, rgba(255,255,255,0.05), #0d0d0d 80%);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /*le conteneur des cartes, il gère la disposition en ligne et leur défilement horizontal*/
