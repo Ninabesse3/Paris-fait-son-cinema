@@ -1,4 +1,4 @@
-/* changement de la couleur du fond sur toutes les pages*/
+/* ---------- Style global ---------- */
 body {
   background-color: #0d0d0d;
   margin: 0;
@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 
+/* ---------- Effet projecteur cinéma ---------- */
 .light-fade {
   position: fixed;
   top: 0;
@@ -18,49 +19,108 @@ body {
   background: radial-gradient(circle at center, rgba(255,255,255,0.07) 0%, transparent 70%);
   pointer-events: none;
   z-index: -1;
-
-/*le conteneur des cartes, il gère la disposition en ligne et leur défilement horizontal*/
-.card-container {
-    display: flex;
-    justify-content: flex-start;
-    gap: 5px;
-    overflow-x: auto;
-    padding: 20px;
-    flex-wrap: nowrap;
-    scroll-behavior: smooth;
-    scroll-padding: 20px;
 }
 
-/*taille des images des affiches des films dans le index.html*/
-img {
-    width: 70%;
-    height: 90%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
-/*couleur et taille des cartes ainsi que du texte*/
-.card {
-    flex: 0 0 auto;
-    width: 200px;
-    height: 250px;
-    padding: 20px;
-}
-
-/*la mise en page des détails des films dans le view.html*/
-#card-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-/*mise en page de la navbar*/
+/* ---------- Navbar ---------- */
 .navbar {
-    overflow: hidden;
-    background-color: rgb(90, 90, 90);
-    padding: 0.5em 1em;
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 25px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h1 {
+  font-family: "Cinzel", serif;
+  color: #f1c40f;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(241,196,15,0.4);
+}
+
+.navbar p {
+  font-size: 1em;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+/* ---------- Conteneur de cartes ---------- */
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 40px 20px;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
+}
+
+/* ---------- Cartes individuelles ---------- */
+.card {
+  flex: 0 0 auto;
+  width: 220px;
+  height: 340px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(241,196,15,0.3);
+}
+
+/* ---------- Image des affiches ---------- */
+.card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ---------- Titre des films ---------- */
+.card h2 {
+  font-size: 1em;
+  color: #f5f5f5;
+  margin: 10px 0 0 0;
+  font-weight: 400;
+}
+
+/* ---------- Liens (suppression du style par défaut) ---------- */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Pied de page ---------- */
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  color: #888;
+  font-size: 0.9em;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .navbar h1 {
+    font-size: 1.6em;
+  }
+
+  .card {
+    width: 180px;
+    height: 280px;
+  }
+
+  .card img {
+    height: 75%;
+  }
 }
