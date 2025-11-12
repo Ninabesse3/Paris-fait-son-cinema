@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  cursor: url('images/camera-cursor.png'), auto;
+}
+
 /* ---------- Effet projecteur cinéma ---------- */
 .light-fade {
   position: fixed;
