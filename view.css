@@ -106,5 +106,23 @@ body {
 #map {
     margin-bottom: 15px;
 }
+.infos-droite {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
 
+#resume {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  text-align: justify;
+}
+
+#real, #act {
+  font-weight: bold;
+  color: #D1A54D;
+}
 
