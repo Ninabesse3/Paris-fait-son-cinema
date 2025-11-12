@@ -7,7 +7,7 @@ body {
   background-image: radial-gradient(circle at 50% 20%, rgba(255,255,255,0.05), #0d0d0d 80%);
   min-height: 100vh;
   overflow-x: hidden;
-  cursor: url('https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/1f3ac.png'), url("https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/1f3ac.png"), auto;
+  cursor: url('https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/1f3ac.png'), url("https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/1f3ac.png"), url('%F0%9F%8E%AC'), url("%F0%9F%8E%AC"), auto;
 }
 
 /* ---------- Effet projecteur cinéma ---------- */
