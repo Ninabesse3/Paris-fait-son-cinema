@@ -7,9 +7,6 @@ body {
   background-image: radial-gradient(circle at 50% 20%, rgba(255,255,255,0.05), #0d0d0d 80%);
   min-height: 100vh;
   overflow-x: hidden;
-}
-
-body {
   cursor: url('https://tse3.mm.bing.net/th/id/OIP.X6vWBRDyog1BEL3Fu4CrQAHaI7?w=900&h=1085&rs=1&pid=ImgDetMain&o=7&rm=3'), auto;
 }
 
