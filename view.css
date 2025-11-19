@@ -1,109 +1,39 @@
-body {
-    background: #2e2e2e;
-    background: radial-gradient(circle,rgba(46, 46, 46, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    margin: 0;
-    min-height: 100vh;
-    overflow-x: hidden;
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh; 
+  background-image: url("https://images.cinefil.com/movies/1166628.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/*mise en page de la navbar*/
-.navbar {
-    background-color: #0d0d0d;
-    padding: 20px 10px; 
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-top: 10px;
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.navbar h1 {
-    color: #D1A54D;
-    margin: 0;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(241,196,15,0.4);
-}
-
-.navbar a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-#logo {
-    width: 70px;
-    margin-right: 10px;
-}
-
-/*la mise en page des détails des films dans le view.html*/
-#card-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-.map-lieu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-content {
+  position: relative;
+  z-index: 1;
   color: white;
-  gap: 60px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
 }
 
-#labels {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-.img-infos {
-  display: flex;
-  align-items: flex-start;
-  gap: 60px;
-  max-width: 1000px;
+.hero-content h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
-.img-infos img {
-  width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
-
-.infos-droite {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#resume {
-  text-align: justify;
-  line-height: 1.5;
-}
-
-#real, #act {
-  margin-top: 10px;
-}
-
-#act ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#act li {
-  margin-left: 10px;
-}
-
-#map {
-    margin-bottom: 15px;
-}
-
