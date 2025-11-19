@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 80vh; 
-  background-image: href="https://images.cinefil.com/movies/1166628.webp";
+  background-image: url("https://images.cinefil.com/movies/1166628.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
